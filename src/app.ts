@@ -32,7 +32,7 @@ const discordFlow = addKeyword<Provider, Database>("doc").addAnswer(
 );
 
 const welcomeFlow = addKeyword<Provider, Database>(["hi", "hello", "hola"])
-  .addAnswer(`🙌 Hello welcome to this *Chatbot*`)
+  .addAnswer(`Bienvenido emprendedor, quieres más info de los chatbots`)
   .addAnswer(
     [
       "I share with you the following links of interest about the project",
@@ -100,7 +100,7 @@ const main = async () => {
     jwtToken: process.env.jwtToken,
     numberId: process.env.numberId,
     verifyToken: process.env.verifyToken,
-    version: "v20.0",
+    version: "v21.0",
   });
   const adapterDB = new Database();
 
